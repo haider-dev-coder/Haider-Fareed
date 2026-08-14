@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Fareed - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas Animation -->
+    <div class="animation-container">
+        <canvas id="scroll-canvas"></canvas>
+        <div class="overlay-gradient"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Navigation -->
+        <header class="navbar">
+            <div class="logo">HAIDER FAREED</div>
+            <nav class="nav-links" id="main-nav">
+                <div class="nav-indicator" id="nav-indicator"></div>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#testimonials" class="nav-item">Testimonials</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="https://api.whatsapp.com/send?phone=923324588834" target="_blank" class="btn btn-primary nav-cta">Start a Project <span class="arrow">↗</span></a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-top-label">Hi, I am</div>
+            <h1 class="hero-title">Haider<span>Fareed</span></h1>
+            
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="trusted-badge">✦ Full Stack Developer & AI/ML Engineer</div>
+                    <h2 style="line-height: 1.4; margin-bottom: 2rem;">I build scalable web applications, intelligent AI solutions, and high-performance digital experiences.</h2>
+                    <div class="hero-actions">
+                        <a href="https://api.whatsapp.com/send?phone=923324588834" target="_blank" class="btn btn-primary">Start a Project <span class="arrow">↗</span></a>
+                        <a href="#projects" class="btn btn-secondary">View My Work <span class="arrow">↘</span></a>
+                    </div>
+                </div>
+                
+                <!-- hero-center portrait removed due to broken image/overlap with background video -->
+
+                <div class="hero-right">
+                    <div class="stats-card glass">
+                        <div class="avatar-group">
+                            <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <img class="avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <img class="avatar" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client">
+                            <img class="avatar" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+                        </div>
+                        <p class="stats-number">99.8% Of My Clients Are Satisfied</p>
+                        <p class="stats-desc">— Be One Of Them Today.</p>
+                        <div class="stats-tags">
+                            <span class="tag">Free Consultation</span>
+                            <span class="tag">24h Response</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <div class="stat-box">
+                <span class="stat-val">3+ Years</span>
+                <span class="stat-label">Professional Experience</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val">1,000+</span>
+                <span class="stat-label">CRM Leads Managed</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val">3+</span>
+                <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val">AI + Full Stack</span>
+                <span class="stat-label">Core Expertise</span>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-label">✦ About Me</div>
+            <div class="about-text">
+                <p>Hey, I'm Haider Fareed — a Full Stack Developer and AI/ML Engineer.<br><br>
+                <span style="font-size: 1.2rem; font-family: var(--font-body); line-height: 1.6; display: block; color: var(--text-muted); margin-bottom: 1.5rem;">I build scalable web applications, business management systems, e-commerce platforms, and AI-powered solutions. My core expertise includes React.js, TypeScript, Node.js, Python, FastAPI, PostgreSQL, and REST APIs.</span>
+                <span style="font-size: 1.2rem; font-family: var(--font-body); line-height: 1.6; display: block; color: var(--text-muted); margin-bottom: 1.5rem;">I've developed real-world systems including a Real Estate CRM managing 1,000+ leads and property records, AI-powered agents using LangChain and Gemini, and an accessibility-focused Android application using YOLO and computer vision.</span>
+                <span style="font-size: 1.2rem; font-family: var(--font-body); line-height: 1.6; display: block; color: var(--text-muted);">I focus on turning complex business requirements into reliable, practical, and user-friendly software.</span>
+                </p>
+                <div class="about-actions">
+                    <a href="https://api.whatsapp.com/send?phone=923324588834" target="_blank" class="btn btn-primary">Let's Work Together <span class="arrow">↗</span></a>
+                    <a href="#projects" class="btn btn-secondary">Explore Projects <span class="arrow">↘</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack / Logos Strip -->
+        <section class="logos-strip" style="flex-direction: column; gap: 2rem;">
+            <div class="tech-stack-title" style="color:var(--text-muted); font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; font-family: var(--font-heading);">✦ Technologies I Work With</div>
+            <div style="display:flex; justify-content:center; align-items:center; gap:2rem; flex-wrap:wrap; font-family:var(--font-heading); font-size:1.5rem; color:var(--text-muted); font-weight:bold; width:100%; opacity:0.8;">
+                <span style="color:#fff;">React.js</span> <span>·</span> <span style="color:#fff;">TypeScript</span> <span>·</span> <span style="color:#fff;">Node.js</span> <span>·</span> <span style="color:#fff;">Python</span> <span>·</span> <span style="color:#fff;">FastAPI</span> <span>·</span> <span style="color:#fff;">PostgreSQL</span> <span>·</span> <span style="color:#fff;">LangChain</span> <span>·</span> <span style="color:#fff;">Gemini AI</span> <span>·</span> <span style="color:#fff;">YOLO</span> <span>·</span> <span style="color:#fff;">Shopify</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="projects-header">
+                <div class="projects-label">✦ My Work</div>
+                <h2 class="projects-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="projects images/Crm (2).png" alt="Real Estate CRM System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Real Estate CRM System</h3>
+                        <p>Full-stack CRM for managing leads, properties, contacts, tasks, documents, and sales operations.</p>
+                        <span class="project-tag">React · TypeScript · Node.js · Express · PostgreSQL</span>
+                        <a href="#" class="btn btn-secondary project-btn" style="display: none;">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="projects images/habbit tracker.png" alt="AI Life Coach & Habit Tracker" style="object-position: top left;">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Life Coach & Habit Tracker</h3>
+                        <p>AI-powered assistant that generates personalized plans, tracks habits, and helps users manage goals and daily activities.</p>
+                        <span class="project-tag">Python · LangChain · Gemini AI · Streamlit · Google Calendar</span>
+                        <a href="#" class="btn btn-secondary project-btn" style="display: none;">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper guide-nest-wrapper">
+                        <img src="projects images/Guide nest app.jpeg" alt="GuideNest – Accessibility Navigation App" class="mobile-screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>GuideNest – Accessibility Navigation App</h3>
+                        <p>Android accessibility application using real-time object detection and distance estimation to assist visually impaired users.</p>
+                        <span class="project-tag">Android · Java · CameraX · FastAPI · YOLO</span>
+                        <a href="#" class="btn btn-secondary project-btn" style="display: none;">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-footer">
+                <h3>I build software that solves real problems.</h3>
+                <span style="font-size: 1.2rem; color: var(--text-muted); font-family: var(--font-body); display: block; margin-top: 1.5rem; max-width: 800px; line-height: 1.6;">From scalable web applications to AI-powered solutions, I focus on performance, usability, and practical business impact.</span>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="projects-header" style="text-align: center;">
+                <div class="projects-label">✦ What I Do</div>
+                <h2 class="projects-title">My Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <h3>Full Stack Development</h3>
+                    <p>Building scalable web applications with React, Node.js, Python, FastAPI, PostgreSQL, and modern APIs.</p>
+                </div>
+                <div class="service-card glass">
+                    <h3>AI/ML Solutions</h3>
+                    <p>Developing AI-powered applications, AI agents, computer vision systems, and intelligent automation using Python, LangChain, Gemini AI, and YOLO.</p>
+                </div>
+                <div class="service-card glass">
+                    <h3>E-Commerce Development</h3>
+                    <p>Developing and customizing Shopify, WordPress, and WooCommerce solutions for modern online businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="projects-header" style="text-align: center;">
+                <div class="projects-label">✦ Core Value</div>
+                <h2 class="projects-title">What I Bring</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass">
+                    <p>Writing maintainable, scalable, and structured code using modern development practices.</p>
+                    <div class="client-info">
+                        <strong>Clean Development</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <p>Turning complex technical and business requirements into practical software solutions.</p>
+                    <div class="client-info">
+                        <strong>Problem Solving</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <p>Building applications with a focus on performance, usability, automation, and measurable impact.</p>
+                    <div class="client-info">
+                        <strong>Business Focus</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="projects-header" style="text-align: center;">
+                <div class="projects-label">✦ Let's Talk</div>
+                <h2 class="projects-title">Get In Touch</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Have a project or idea in mind? Let's build something useful together.</p>
+            </div>
+            <div class="contact-content glass">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
+                    <input type="hidden" name="access_key" value="0d745253-c018-4c0f-87d4-ed11a2c8507d">
+                    <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="from_name" value="Portfolio Website">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" id="submit-btn" class="btn btn-primary">Send Message <span class="arrow">↗</span></button>
+                    <div id="form-result" style="display: none; margin-top: 1rem; font-size: 0.9rem; text-align: center;"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div>
+                    <div class="logo">HAIDER FAREED</div>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Full Stack Developer & AI/ML Engineer</p>
+                </div>
+                
+                <nav class="footer-nav">
+                    <a href="#about" class="footer-nav-item">About</a>
+                    <a href="#projects" class="footer-nav-item">Projects</a>
+                    <a href="#services" class="footer-nav-item">Services</a>
+                    <a href="#testimonials" class="footer-nav-item">Testimonials</a>
+                    <a href="#contact" class="footer-nav-item">Contact</a>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/haider-fareed/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/haider-dev-coder" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">
+                &copy; 2026 Haider Fareed. All Rights Reserved.
+            </div>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
