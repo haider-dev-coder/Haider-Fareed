@@ -2,7 +2,7 @@ const canvas = document.getElementById('scroll-canvas');
 const context = canvas.getContext('2d');
 
 const frameCount = 240;
-const currentFrame = index => `./frames/frame_${index.toString().padStart(6, '0')}.png`;
+const currentFrame = index => `./frames/frame_${index.toString().padStart(6, '0')}.webp`;
 
 const images = [];
 
